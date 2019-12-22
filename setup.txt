@@ -1,0 +1,17 @@
+-- create laravel Lumen project 
+create-project --prefer-dist laravel/lumen brandzgarage
+-- run project
+php -S localhost:8000 -t public
+-- migration
+php artisan make:migration create_students_table
+php artisan make:migration create_student_documents_table
+
+--packages used
+
+composer require "webpatser/laravel-uuid:^3.0" --https://github.com/webpatser/laravel-uuid
+uuid creation : https://medium.com/@mamreezaa/use-uuid-in-lumen-d47ec02c330
+
+-- version
+PHP > 7.1
+laravel framwork Lumen : 6.2.0
+
